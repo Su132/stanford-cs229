@@ -46,6 +46,7 @@ def nb_test(matrix, state):
 def evaluate(output, label):
     error = (output != label).sum() * 1. / len(output)
     print('Error: %1.4f' % error)
+    return error
 
 def main():
     trainMatrix, tokenlist, trainCategory = readMatrix('MATRIX.TRAIN')
